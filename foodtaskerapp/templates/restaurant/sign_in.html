@@ -7,7 +7,7 @@
 {% block content %}
   <form method="POST">
     {% csrf_token %}
-    {{ bootstrap_form form }}
+    {% bootstrap_form form %}
     <button type="submit" class="btn btn-pink pull-right">Sign In</button>
   </form>
   <a href="{% url 'restaurant-sign-up' %}">Become a Restaurant</a>
